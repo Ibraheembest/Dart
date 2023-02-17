@@ -1,0 +1,78 @@
+Write a program with dart to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quote ?
+
+void main() {
+  String name = 'John Doe';
+  print('Hello I am "$name"');
+  print("Hello I am '$name'");
+}
+
+---------------------------------------------------------
+
+Write a program in Dart that finds simple interest. Formula= (p * t * r) / 100?
+
+import 'dart:io';
+void main() {
+ double formula,p,t,r;
+  print("Enter P: ");
+  p = double.parse(stdin.readLineSync());
+  
+  print("Enter T: ");
+  t = double.parse(stdin.readLineSync());
+  
+  print("Enter R: ");
+  r = double.parse(stdin.readLineSync());
+  formula= (p * t * r) / 100;
+  print(formula);
+}
+
+---------------------------------------------------------
+
+Write a program to print a square of a number using user input?
+
+import 'dart:io';
+void main() {
+ double sq,n;
+  print("Enter Number: ");
+  n = double.parse(stdin.readLineSync());
+  sq=n*n;
+  print(sq);
+}
+
+----------------------------------------------------------
+
+Write a dart program to convert String to int?
+
+import 'dart:io';
+void main() { 
+  String str = '123'; 
+  int num = int.parse(str); 
+  print(num);  
+}
+
+---------------------------------------------------------
+
+make funcations to make opreations between 2 nums?+-*/
+
+import 'dart:io';
+void main() {
+    int num1 = 10;
+    int num2 = 5;
+
+    print("Addition of $num1 and $num2 is ${add(num1, num2)}");
+    print("Subtraction of $num1 and $num2 is ${subtract(num1, num2)}");
+    print("Multiplication of $num1 and $num2 is ${multiply(num1, num2)}");
+    print("Division of $num1 and $num2 is ${divide(num1, num2)}");
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+int subtract(int a, int b) {
+    return a - b;
+}
+int multiply(int a, int b) {
+    return a * b;
+}
+double divide(int a, int b) {
+    return a / b;
+}
