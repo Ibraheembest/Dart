@@ -1,0 +1,109 @@
+Write a Dart program to display the first and last colors from the following list. color_list = ["Red","Green","White" ,"Black"]
+
+
+void main() { 
+  List color_list = ["Red", "Green", "White", "Black"]; 
+  
+  print("First color: ${color_list[0]}"); 
+  print("Last color: ${color_list[3]}"); 
+}
+
+
+
+_________________________________________________________________________________________________________________________________________________________________
+
+
+Write a Dart program to get the volume of a sphere with radius 6.
+
+
+void main() {
+  double radius = 6;
+  double volume = (4/3) * 3.14 * (radius * radius * radius);
+  print("The volume of the sphere with radius 6 is $volume");
+}
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________________
+
+
+build a full calcultor
+
+
+
+import 'dart:io';
+
+void main() {
+  print("Welcome to the Calculator App!");
+
+  while (true) {
+    print("Please enter your first number:");
+     int? num1=int.parse(stdin.readLineSync()!);
+
+    print("Please enter your second number:");
+     int? num2=int.parse(stdin.readLineSync()!);
+
+    print("Please enter an operator (+, -, *, /):");
+    var operator = stdin.readLineSync();
+
+    if (operator == "+") {
+      print("Result: ${num1 + num2}");
+    } else if (operator == "-") {
+      print("Result: ${num1 - num2}");
+    } else if (operator == "*") {
+      print("Result: ${num1 * num2}");
+    } else if (operator == "/") {
+      print("Result: ${num1 / num2}");
+    } else {
+      print("Invalid operator!"); 
+    }
+    
+    print("Do you want to continue using the calculator app? (y/n)"); 
+
+    String? answer = stdin.readLineSync()!; 
+
+    if (answer == "n") { 
+      break; 
+
+     } else if (answer != "y" && answer != "n"){ 
+
+       print("Invalid input! Please enter either y or n."); 
+
+     }  
+
+  }  
+
+  print('Thank you for using the Calculator App!'); 
+}
+
+
+_________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________________
+
+
+take a num check if odd or even?
+
+
+
+import 'dart:io';
+void main() {
+print("Enter Number : ");
+  int? num=int.parse(stdin.readLineSync()!);
+  if (num % 2 == 0) {
+    print("$num is even");
+  } else {
+    print("$num is odd");
+  }
+}
